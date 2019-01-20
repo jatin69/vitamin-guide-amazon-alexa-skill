@@ -34,3 +34,9 @@ Invoke the skill   - "Alexa, open Vitamin Guide"
 Ask about vitamin  - "Tell me about Vitamin A" or "Vitamin B"
 Ask for help       - "Help"
 Exit               - "Bye"
+or direct invocation,
+"Alexa ask vitamin guide to tell me about vitamin A"
+
+## Demo video link 
+
+[Vitamin Guide](https://www.youtube.com/watch?v=uQ4zsWOpbT0)
