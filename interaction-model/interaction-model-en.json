@@ -1,0 +1,243 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "vitamin guide",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "open vitamin guide",
+                        "vitamin guide",
+                        "alexa open vitamin guide"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "abort",
+                        "take me out",
+                        "i want to exit",
+                        "i want to quit",
+                        "i wanna exit",
+                        "goodbye",
+                        "i quit",
+                        "quit",
+                        "exit",
+                        "bye"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "askAboutVitamin",
+                    "slots": [
+                        {
+                            "name": "VitaminsList",
+                            "type": "vitaminsList"
+                        }
+                    ],
+                    "samples": [
+                        "{VitaminsList}",
+                        "Tell me about {VitaminsList}",
+                        "Tell me about Vitamin {VitaminsList}",
+                        "Vitamin {VitaminsList}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "vitaminsList",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "B",
+                                "synonyms": [
+                                    "b",
+                                    "b."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 9",
+                                "synonyms": [
+                                    "b9",
+                                    "b. nine",
+                                    "Folic acid",
+                                    "Folinic acid",
+                                    "folate"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 7",
+                                "synonyms": [
+                                    "b7",
+                                    "b. seven",
+                                    "biotin"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 12",
+                                "synonyms": [
+                                    "b12",
+                                    "b. twelve",
+                                    "Hydroxycobalamin",
+                                    "cobalamins",
+                                    "methylcobalamin",
+                                    "cyanocobalamin"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 6",
+                                "synonyms": [
+                                    "b6",
+                                    "b. six",
+                                    " pyridoxal",
+                                    "pyridoxamine",
+                                    "pyridoxine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 5",
+                                "synonyms": [
+                                    "b5",
+                                    "b. five",
+                                    "pantothenic acid"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 3",
+                                "synonyms": [
+                                    "b3",
+                                    "b. three",
+                                    "riboside",
+                                    "Tryptophan",
+                                    "nicotinic acid",
+                                    "nicotinamide",
+                                    "niacin"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 2",
+                                "synonyms": [
+                                    "b2",
+                                    "b. two",
+                                    "Riboflavin"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K",
+                                "synonyms": [
+                                    "Menaquinones",
+                                    "Phylloquinone"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "E",
+                                "synonyms": [
+                                    "Tocotrienols",
+                                    "Tocopherols"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "D",
+                                "synonyms": [
+                                    "Cholecalciferol",
+                                    "Ergocalciferol"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C",
+                                "synonyms": [
+                                    "Ascorbic acid"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B 1",
+                                "synonyms": [
+                                    "b1",
+                                    "b. one",
+                                    "Thiamin"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A",
+                                "synonyms": [
+                                    "Retinol",
+                                    "Retinal"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "askAboutVitamin",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "VitaminsList",
+                            "type": "vitaminsList",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.780749748528.289742811129"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.780749748528.289742811129",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which Vitamin do you want to know about ?"
+                    }
+                ]
+            }
+        ]
+    }
+}
