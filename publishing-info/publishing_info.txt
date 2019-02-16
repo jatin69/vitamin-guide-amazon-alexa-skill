@@ -11,9 +11,9 @@ It has all the 13 vitamins.
 Namely, Vitamin A, B1, B2, B3, B5, B6, B7, B9, B12, C, D, E, and K.
 
 Simply start by asking alexa about a vitamin, say
-"Tell me about Vitamin A", or "Vitamin B1"
+"Tell me about Vitamin A", or "Vitamin B"
 or directly use,
-"Alexa ask vitamin guide to tell me about vitamin D"
+"Alexa ask vitamin guide about vitamin C"
 
 Ask alexa for "help" to know more.
 
@@ -23,7 +23,7 @@ Ask alexa for "help" to know more.
 
 Alexa, open Vitamin Guide
 Tell me about vitamin A
-Alexa ask vitamin guide to tell me about vitamin A
+Alexa ask vitamin guide about vitamin A
 
 ## Keywords
 vitamin, health, guide, nutrition, education, child, diseases, food
@@ -35,7 +35,7 @@ Ask about vitamin  - "Tell me about Vitamin A" or "Vitamin B"
 Ask for help       - "Help"
 Exit               - "Bye"
 or direct invocation,
-"Alexa ask vitamin guide to tell me about vitamin A"
+"Alexa ask vitamin guide about vitamin A"
 
 ## Demo video link 
 

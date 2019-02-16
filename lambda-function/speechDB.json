@@ -1,9 +1,13 @@
 {
-	"invocationName" : "vitamin guide",
-	"welcome" : "To know about a vitamin, simply say its name. Try saying, Vitamin A, or say, help, to know more. ",
-	"help" : "You can ask me about Vitamins. Namely, Vitamin A, B, C, D, E, and K . Try saying, Vitamin A , to know more about it. ",
-	"didNotUnderstand" : "Sorry, I could not understand you, Try again or say, help, to know more",
-	"reprompt" : "I could not understand you, Try saying, tell me about Vitamin A ",
-	"bye" : "Okay, Goodbye! ",
- 	"vitaminBInfo" : " Vitamin B has eight subtypes. Namely, Vitamin B1, B2, B3, B5, B6, B7, B9, and B12 . Try saying, Vitamin B1, to know more . "
+	"invocationName": "vitamin guide",
+	"welcome": "To know about a vitamin, simply say its name. Try saying, Vitamin A, or say, help, to know more. ",
+	"help": "You can ask me about Vitamins. Namely, Vitamin A, B, C, D, E, and K . Try saying, Vitamin A , to know more about it. ",
+	"didNotUnderstand": "Sorry, I could not understand you, Try again, or say, help, to know more . ",
+	"reprompt": " Try saying, tell me about Vitamin A ",
+	"bye": "Okay, Goodbye! ",
+	"vitaminBInfo": " Vitamin B has eight subtypes. Namely, Vitamin B1, B2, B3, B5, B6, B7, B9, and B12 . ",
+	"continueSession": " Do you want to know about another vitamin ? ",
+	"continueSessionReprompt": " If you want to know about other vitamins, say Yes, or Say, No, to exit . ",
+	"askMore": " Which vitamin do you want to know about ? ",
+	"continueSessionForVitaminB": "Try Saying , Vitamin B1 , to know more about it, or say, bye, to exit . "
 }

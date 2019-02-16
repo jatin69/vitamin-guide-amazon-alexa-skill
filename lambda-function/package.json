@@ -9,7 +9,10 @@
   "keywords": [
     "alexa",
     "skill",
-    "vitamin"
+    "vitamin",
+    "alexa presentation language",
+    "apl",
+    "guide"
   ],
   "author": "Jatin Rohilla",
   "license": "Apache-2.0",

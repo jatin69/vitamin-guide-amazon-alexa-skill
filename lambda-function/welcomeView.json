@@ -3,14 +3,11 @@
         "type": "APL",
         "version": "1.0",
         "theme": "dark",
-        "import": [
-            {
-                "name": "alexa-layouts",
-                "version": "1.0.0"
-            }
-        ],
-        "resources": [
-            {
+        "import": [{
+            "name": "alexa-layouts",
+            "version": "1.0.0"
+        }],
+        "resources": [{
                 "description": "Stock color for the light theme",
                 "colors": {
                     "colorTextPrimary": "#151920"
@@ -55,12 +52,10 @@
         "styles": {
             "textStyleBase": {
                 "description": "Base font description; set color and core font family",
-                "values": [
-                    {
-                        "color": "@colorTextPrimary",
-                        "fontFamily": "Amazon Ember"
-                    }
-                ]
+                "values": [{
+                    "color": "@colorTextPrimary",
+                    "fontFamily": "Amazon Ember"
+                }]
             },
             "textStyleBase0": {
                 "description": "Thin version of basic font",
@@ -123,46 +118,41 @@
             "parameters": [
                 "payload"
             ],
-            "items": [
-                {
-                    "type": "Container",
-                    "height": "100vh",
-                    "items": [
-                        {
-                            "type": "Image",
-                            "source": "${payload.bodyTemplate6Data.backgroundImage.sources[0].url}",
-                            "scale": "best-fill",
-                            "width": "100vw",
-                            "height": "100vh",
-                            "position": "absolute"
-                        },
-                        {
-                            "type": "AlexaHeader",
-                            "headerAttributionImage": "${payload.bodyTemplate6Data.logoUrl}"
-                        },
-                        {
-                            "type": "Container",
-                            "grow": 1,
-                            "justifyContent": "${viewport.shape == 'round' ? 'center' : 'end'}",
-                            "items": [
-                                {
-                                    "paddingLeft": "@marginLeft",
-                                    "paddingRight": "@marginRight",
-                                    "type": "Text",
-                                    "text": "${payload.bodyTemplate6Data.textContent.primaryText.text}",
-                                    "style": "textStyleBody",
-                                    "textAlign": "${viewport.shape == 'round' ? 'center' : 'left'}"
-                                }
-                            ]
-                        },
-                        {
-                            "when": "${viewport.shape != 'round'}",
-                            "type": "AlexaFooter",
-                            "footerHint": "${payload.bodyTemplate6Data.hintText}"
-                        }
-                    ]
-                }
-            ]
+            "items": [{
+                "type": "Container",
+                "height": "100vh",
+                "items": [{
+                        "type": "Image",
+                        "source": "${payload.bodyTemplate6Data.backgroundImage.sources[0].url}",
+                        "scale": "best-fill",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "position": "absolute"
+                    },
+                    {
+                        "type": "AlexaHeader",
+                        "headerAttributionImage": "${payload.bodyTemplate6Data.logoUrl}"
+                    },
+                    {
+                        "type": "Container",
+                        "grow": 1,
+                        "justifyContent": "${viewport.shape == 'round' ? 'center' : 'end'}",
+                        "items": [{
+                            "paddingLeft": "@marginLeft",
+                            "paddingRight": "@marginRight",
+                            "type": "Text",
+                            "text": "${payload.bodyTemplate6Data.textContent.primaryText.text}",
+                            "style": "textStyleBody",
+                            "textAlign": "${viewport.shape == 'round' ? 'center' : 'left'}"
+                        }]
+                    },
+                    {
+                        "when": "${viewport.shape != 'round'}",
+                        "type": "AlexaFooter",
+                        "footerHint": "${payload.bodyTemplate6Data.hintText}"
+                    }
+                ]
+            }]
         }
     },
     "dataSources": {
@@ -173,8 +163,7 @@
                 "contentDescription": null,
                 "smallSourceUrl": null,
                 "largeSourceUrl": null,
-                "sources": [
-                    {
+                "sources": [{
                         "url": "https://s3.amazonaws.com/vitamin-guide/background_1024x600.jpg",
                         "size": "small",
                         "widthPixels": 0,
@@ -192,8 +181,7 @@
                 "contentDescription": null,
                 "smallSourceUrl": null,
                 "largeSourceUrl": null,
-                "sources": [
-                    {
+                "sources": [{
                         "url": "http://images.media-allrecipes.com/userphotos/250x250/303241.jpg",
                         "size": "small",
                         "widthPixels": 0,

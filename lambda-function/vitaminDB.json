@@ -16,7 +16,7 @@
   "B 1": {
     "name": "Vitamin B1",
     "uses": "Vitamin B1 is also known as thiamine. It plays a major role in metabolizing food into energy. ",
-    "sources": "Vitamin B1 is found in whole-grain cereals, beans, nuts, yeast, and meats. Too little vitamin B1 causes beriberi, a disease affecting the heart, digestive system, and the nervous system. ",
+    "sources": "Vitamin B1 is found in whole-grain cereals, beans, nuts, yeast, and meats. Too little vitamin B1 causes beriberi, a disease affecting the heart, digestive system, and the nervous system . ",
     "diseases": "",
     "imageURL": "https://s3.amazonaws.com/vitamin-guide/vitamin-B1_280x280.png"
   },
@@ -44,7 +44,7 @@
   "B 6": {
     "name": "Vitamin B6",
     "uses": "Vitamin B6 helps build new red blood cells, and reduces the risk of heart diseases. ",
-    "sources": "Major sources of Vitamin B6 are Bananas, Beans, Lentils, Milk, and Brown rice. Carrots and Chicken also contains Vitamin B6. ", 
+    "sources": "Major sources of Vitamin B6 are Bananas, Beans, Lentils, Milk, and Brown rice. Carrots and Chicken also contains Vitamin B6. ",
     "diseases": "",
     "imageURL": "https://s3.amazonaws.com/vitamin-guide/vitamin-B6_280x280.png"
   },
@@ -58,7 +58,7 @@
   "B 9": {
     "name": "Vitamin B9",
     "uses": "Vitamin B9 is also known as folic acid. It is necessary for the body's growth and development. Pregnant women should take good amount of this vitamin as it is vital to a baby's health and development. ",
-    "sources": "Major sources are dark-green leafy vegetables, asparagus, and brussels sprouts. Nuts, beans, and peas also contain Vitamin B9. ", 
+    "sources": "Major sources are dark-green leafy vegetables, asparagus, and brussels sprouts. Nuts, beans, and peas also contain Vitamin B9. ",
     "diseases": "",
     "imageURL": "https://s3.amazonaws.com/vitamin-guide/vitamin-B9_280x280.png"
   },
@@ -72,13 +72,13 @@
   "C": {
     "name": "Vitamin C",
     "uses": "The body uses vitamin C to make skin, tendons, ligaments and blood vessels. It also uses this vitamin to maintain bones, teeth, and to heal wounds. ",
-    "sources": "Major sources are citrus fruits, kiwis, mangos, papayas, pineapples and watermelon. Berries such as, strawberries, raspberries, blueberries, and cranberries are also rich in vitamin C. ", 
+    "sources": "Major sources are citrus fruits, kiwis, mangos, papayas, pineapples and watermelon. Berries such as, strawberries, raspberries, blueberries, and cranberries are also rich in vitamin C. ",
     "imageURL": "https://s3.amazonaws.com/vitamin-guide/vitamin-C_280x280.png"
   },
   "D": {
     "name": "Vitamin D",
     "uses": "Vitamin D is also known as the sunlight vitamin. It helps the body absorb calcium, which creates healthy bones and teeth. ",
-    "sources": "Major Sources of vitamin D are Sunlight, Fish liver oils, Fortified cereals, milk and dairy products like, cheese, yogurt, butter, and cream. ", 
+    "sources": "Major Sources of vitamin D are Sunlight, Fish liver oils, Fortified cereals, milk and dairy products like, cheese, yogurt, butter, and cream. ",
     "diseases": "",
     "imageURL": "https://s3.amazonaws.com/vitamin-guide/vitamin-D_280x280.png"
   },

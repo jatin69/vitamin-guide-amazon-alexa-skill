@@ -31,7 +31,10 @@
                         "i quit",
                         "quit",
                         "exit",
-                        "bye"
+                        "bye",
+                        "thats all",
+                        "thank you",
+                        "that would be all"
                     ]
                 },
                 {
@@ -51,6 +54,20 @@
                         "Tell me about {VitaminsList}",
                         "Tell me about Vitamin {VitaminsList}",
                         "Vitamin {VitaminsList}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yeah",
+                        "yep"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "nah",
+                        "nope"
                     ]
                 }
             ],

@@ -3,14 +3,11 @@
         "type": "APL",
         "version": "1.0",
         "theme": "dark",
-        "import": [
-            {
-                "name": "alexa-layouts",
-                "version": "1.0.0"
-            }
-        ],
-        "resources": [
-            {
+        "import": [{
+            "name": "alexa-layouts",
+            "version": "1.0.0"
+        }],
+        "resources": [{
                 "description": "Stock color for the light theme",
                 "colors": {
                     "colorTextPrimary": "#151920"
@@ -56,12 +53,10 @@
         "styles": {
             "textStyleBase": {
                 "description": "Base font description; set color and core font family",
-                "values": [
-                    {
-                        "color": "@colorTextPrimary",
-                        "fontFamily": "Amazon Ember"
-                    }
-                ]
+                "values": [{
+                    "color": "@colorTextPrimary",
+                    "fontFamily": "Amazon Ember"
+                }]
             },
             "textStyleBase0": {
                 "description": "Thin version of basic font",
@@ -75,7 +70,7 @@
                 "extend": "textStyleBase",
                 "values": {
                     "fontWeight": "300",
-                    "paddingBottom" : 20
+                    "paddingBottom": 20
                 }
             },
             "textStyleBase2": {
@@ -143,65 +138,59 @@
                 "parameters": [
                     "listLength"
                 ],
-                "item": [
-                    {
-                        "type": "Container",
-                        "height": "100vh",
-                        "width": "100vw",
-                        "alignItems": "center",
-                        "justifyContent": "end",
-                        "items": [
-                            {
-                                "type": "Image",
-                                "position": "absolute",
-                                "height": "100vh",
-                                "width": "100vw",
-                                "overlayColor": "rgba(0, 0, 0, 0.6)",
-                                "source": "${data.image.sources[0].url}",
-                                "scale": "best-fill"
-                            },
-                            {
-                                "type": "AlexaHeader",
-                                "headerTitle": "${title}",
-                                "headerAttributionImage": "${logo}",
-                                "grow": 1
-                            },
-                            {
-                                "type": "Text",
-                                "text": "${data.textContent.primaryText.text}",
-                                "style": "textStyleBody",
-                                "maxLines": 1
-                            }
-                        ]
-                    }
-                ]
+                "item": [{
+                    "type": "Container",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "alignItems": "center",
+                    "justifyContent": "end",
+                    "items": [{
+                            "type": "Image",
+                            "position": "absolute",
+                            "height": "100vh",
+                            "width": "100vw",
+                            "overlayColor": "rgba(0, 0, 0, 0.6)",
+                            "source": "${data.image.sources[0].url}",
+                            "scale": "best-fill"
+                        },
+                        {
+                            "type": "AlexaHeader",
+                            "headerTitle": "${title}",
+                            "headerAttributionImage": "${logo}",
+                            "grow": 1
+                        },
+                        {
+                            "type": "Text",
+                            "text": "${data.textContent.primaryText.text}",
+                            "style": "textStyleBody",
+                            "maxLines": 1
+                        }
+                    ]
+                }]
             },
             "HorizontalListItem": {
-                "item": [
-                    {
-                        "type": "Container",
-                        "maxWidth": 528,
-                        "minWidth": 312,
-                        "paddingLeft": 16,
-                        "paddingRight": 16,
-                        "height": "100%",
-                        "items": [
-                            {
-                                "type": "Image",
-                                "source": "${data.image.sources[0].url}",
-                                "height": "50vh",
-                                "width": "50vh"
-                            },
-                            {
-                                "type": "Text",
-                                "text": "${data.textContent.primaryText.text}",
-                                "style": "textStyleSecondary",
-                                "maxLines": 1,
-                                "spacing": 12
-                            }
-                        ]
-                    }
-                ]
+                "item": [{
+                    "type": "Container",
+                    "maxWidth": 528,
+                    "minWidth": 312,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "height": "100%",
+                    "items": [{
+                            "type": "Image",
+                            "source": "${data.image.sources[0].url}",
+                            "height": "50vh",
+                            "width": "50vh"
+                        },
+                        {
+                            "type": "Text",
+                            "text": "${data.textContent.primaryText.text}",
+                            "style": "textStyleSecondary",
+                            "maxLines": 1,
+                            "spacing": 12
+                        }
+                    ]
+                }]
             },
             "ListTemplate2": {
                 "parameters": [
@@ -211,35 +200,29 @@
                     "hintText",
                     "listData"
                 ],
-                "items": [
-                    {
+                "items": [{
                         "when": "${viewport.shape == 'round'}",
                         "type": "Container",
                         "height": "100%",
                         "width": "100%",
-                        "items": [
-                            {
-                                "type": "Sequence",
-                                "scrollDirection": "horizontal",
-                                "data": "${listData}",
-                                "height": "100%",
-                                "width": "100%",
-                                "numbered": true,
-                                "item": [
-                                    {
-                                        "type": "FullHorizontalListItem",
-                                        "listLength": "${payload.listTemplate2ListData.listPage.listItems.length}"
-                                    }
-                                ]
-                            }
-                        ]
+                        "items": [{
+                            "type": "Sequence",
+                            "scrollDirection": "horizontal",
+                            "data": "${listData}",
+                            "height": "100%",
+                            "width": "100%",
+                            "numbered": true,
+                            "item": [{
+                                "type": "FullHorizontalListItem",
+                                "listLength": "${payload.listTemplate2ListData.listPage.listItems.length}"
+                            }]
+                        }]
                     },
                     {
                         "type": "Container",
                         "height": "100vh",
                         "width": "100vw",
-                        "items": [
-                            {
+                        "items": [{
                                 "type": "Image",
                                 "source": "${backgroundImage}",
                                 "scale": "best-fill",
@@ -261,11 +244,9 @@
                                 "height": "70vh",
                                 "width": "100%",
                                 "numbered": true,
-                                "item": [
-                                    {
-                                        "type": "HorizontalListItem"
-                                    }
-                                ]
+                                "item": [{
+                                    "type": "HorizontalListItem"
+                                }]
                             },
                             {
                                 "type": "AlexaFooter",
@@ -280,16 +261,14 @@
             "parameters": [
                 "payload"
             ],
-            "item": [
-                {
-                    "type": "ListTemplate2",
-                    "backgroundImage": "${payload.listTemplate2Metadata.backgroundImage.sources[0].url}",
-                    "title": "${payload.listTemplate2Metadata.title}",
-                    "hintText": "${payload.listTemplate2Metadata.hintText}",
-                    "logo": "${payload.listTemplate2Metadata.logoUrl}",
-                    "listData": "${payload.listTemplate2ListData.listPage.listItems}"
-                }
-            ]
+            "item": [{
+                "type": "ListTemplate2",
+                "backgroundImage": "${payload.listTemplate2Metadata.backgroundImage.sources[0].url}",
+                "title": "${payload.listTemplate2Metadata.title}",
+                "hintText": "${payload.listTemplate2Metadata.hintText}",
+                "logo": "${payload.listTemplate2Metadata.logoUrl}",
+                "listData": "${payload.listTemplate2ListData.listPage.listItems}"
+            }]
         }
     },
     "dataSources": {
@@ -300,8 +279,7 @@
                 "contentDescription": null,
                 "smallSourceUrl": null,
                 "largeSourceUrl": null,
-                "sources": [
-                    {
+                "sources": [{
                         "url": "https://s3.amazonaws.com/vitamin-guide/background_1024x600.jpg",
                         "size": "small",
                         "widthPixels": 0,
@@ -324,8 +302,7 @@
             "totalNumberOfItems": 10,
             "hintText": "Try, \"Tell me about Vitamin B1\"",
             "listPage": {
-                "listItems": [
-                    {
+                "listItems": [{
                         "listItemIdentifier": "vitaminB1",
                         "ordinalNumber": 1,
                         "textContent": {
@@ -338,8 +315,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B1_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -368,8 +344,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B2_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -398,8 +373,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B3_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -428,8 +402,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B5_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -458,8 +431,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B6_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -488,8 +460,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B7_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -518,8 +489,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B9_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -548,8 +518,7 @@
                             "contentDescription": null,
                             "smallSourceUrl": null,
                             "largeSourceUrl": null,
-                            "sources": [
-                                {
+                            "sources": [{
                                     "url": "https://s3.amazonaws.com/vitamin-guide/vitamin-B12_280x280.png",
                                     "size": "small",
                                     "widthPixels": 0,
@@ -565,7 +534,7 @@
                         },
                         "token": "vitaminB12"
                     }
-                       
+
                 ]
             }
         }
