@@ -1,5 +1,7 @@
 # todo
 
+- [ ] simulator error : APL document not loading in directFullfillment Mode
+- [X] simulator error : mainview images not loading for any vitamin in big screen devices
 - [x] make publishing info
 - [x] skill icon
 - [x] multi-language

@@ -416,8 +416,8 @@ const AMAZON_YesIntent_Handler = {
                 .addDirective({
                     type: 'Alexa.Presentation.APL.RenderDocument',
                     version: '1.0',
-                    document: welcomeView.document,
-                    datasources: welcomeView.dataSources
+                    document: helpView.document,
+                    datasources: helpView.dataSources
                 })
                 .getResponse();
         } else {

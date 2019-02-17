@@ -207,7 +207,7 @@
                                     "height": 300,
                                     "scale": "best-fit",
                                     "align": "left",
-                                    "paddingRight": 350
+                                    "paddingRight": 35
                                 },
                                 {
                                     "type": "ScrollView",
